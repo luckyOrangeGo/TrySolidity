@@ -1,0 +1,222 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "kryptoBirdz",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_kryptoBird",
+						"type": "string"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"balanceOf(address)": {
+					"details": "NFTs assigned to the zero address are considered invalid, and this  function throws for queries about the zero address.",
+					"params": {
+						"_owner": "An address for whom to query the balance"
+					},
+					"returns": {
+						"_0": "The number of NFTs owned by `_owner`, possibly zero"
+					}
+				},
+				"ownerOf(uint256)": {
+					"details": "NFTs assigned to zero address are considered invalid, and queries  about them do throw.",
+					"params": {
+						"_tokenId": "The identifier for an NFT"
+					},
+					"returns": {
+						"_0": "The address of the owner of the NFT"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"balanceOf(address)": {
+					"notice": "Count all NFTs assigned to an owner"
+				},
+				"ownerOf(uint256)": {
+					"notice": "Find the owner of an NFT"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/contracts/KryptoBirdz.sol": "KryptoBird"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/contracts/ERC721.sol": {
+			"keccak256": "0x3d8b846c6fcc274f734d9d2691de7328122ad72b60d87a07af1a1c72afb734b8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e5460db011c6ed1b1fc5a060eceed0ad3af256a0ab036df0c34d231ad7925994",
+				"dweb:/ipfs/QmXK75AaTnMyPvmZZqRD5wAPmEeWik6BLcskeJk9S8QaDP"
+			]
+		},
+		"src/contracts/ERC721Connector.sol": {
+			"keccak256": "0x336b29e835e1bb32fff2dd80b3ed78e6f0ec373cf03dd07d2f5b4ebbd0243653",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://114ef8c6ba307152dd2f67cf5fa05be4d7efd0f18f1ae38d9cd50f09f34ca95a",
+				"dweb:/ipfs/QmW7MR2Mx582HCw7UM6vJKJKcJLeKDvjCiUMxch1syyB4t"
+			]
+		},
+		"src/contracts/ERC721Metadata.sol": {
+			"keccak256": "0xaed93c98b46f92e66a5bef073d0f7a1c9ebd84f0873972787facda1ef6327f4f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://01ea0ee4341133f5fd52859c015e81a8e672e56a863f43ccc6ddc4786a68726e",
+				"dweb:/ipfs/QmQ9CrSbCK3QvyfgkEi4mExBRPExcwmrtzSkZcbBUa5BA7"
+			]
+		},
+		"src/contracts/KryptoBirdz.sol": {
+			"keccak256": "0xef092ebc9728b535c0a13deed11657c1e8fd4c86fc5a4d07d0529db02d2750e1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e2d33a62adddb0c13f107f41342e0044e8e23bdb66ba7fcb3f255915dc08b394",
+				"dweb:/ipfs/QmNybNubtTLWBojbge7XPaeQmrcGGAddg2zzXHBHjzjwUS"
+			]
+		}
+	},
+	"version": 1
+}

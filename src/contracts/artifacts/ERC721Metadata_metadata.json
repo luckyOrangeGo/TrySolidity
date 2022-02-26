@@ -1,0 +1,88 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "named",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbolified",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/contracts/ERC721Metadata.sol": "ERC721Metadata"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/contracts/ERC721Metadata.sol": {
+			"keccak256": "0xaed93c98b46f92e66a5bef073d0f7a1c9ebd84f0873972787facda1ef6327f4f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://01ea0ee4341133f5fd52859c015e81a8e672e56a863f43ccc6ddc4786a68726e",
+				"dweb:/ipfs/QmQ9CrSbCK3QvyfgkEi4mExBRPExcwmrtzSkZcbBUa5BA7"
+			]
+		}
+	},
+	"version": 1
+}
