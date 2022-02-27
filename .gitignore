@@ -1,5 +1,4 @@
 node_modules
 ./contracts/artifacts
-./test
-./src/abis
+./contracts/interfaces/artifacts
 temp
