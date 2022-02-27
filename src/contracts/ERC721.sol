@@ -23,6 +23,7 @@ contract ERC721 is ERC165, IERC721 {
     // mapping in solidity creates a hash table of key pair values
    
     // Mapping from token id to the owner
+    
     mapping(uint256 => address) private _tokenOwner; 
 
     // Mapping from owner to number of owned tokens 
