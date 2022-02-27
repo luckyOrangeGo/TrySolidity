@@ -1,5 +1,5 @@
 node_modules
 ./contracts/artifacts
 ./test
-./abis
+./src/abis
 temp
